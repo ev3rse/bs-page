@@ -19,6 +19,13 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
-.header_wrap, .footer_wrap {
+#header_wrap, #footer_wrap {
     background: none;
 }
+
+.inner {
+    position: relative;
+    max-width: 780px;
+    padding: 32px 0;
+    margin: 0 auto;
+  }
