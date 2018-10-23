@@ -305,9 +305,11 @@ header.inner {
 		text-align: left;
 
 		& span {
-			font-size: 18px;
-			line-height: 1;
-			vertical-align: middle;
+			font-size: 24px;
+			line-height: 18px;
+			display: inline-block;
+			position: relative;
+			top: 2px;
 		}
 	}
 
