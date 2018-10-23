@@ -226,6 +226,7 @@ form {
 	display: inline-block;
 	cursor: pointer;
 	border-radius: 25px;
+	box-sizing: border-box;
 
 	&.btn-fill {
 		background-color: #65318f;
