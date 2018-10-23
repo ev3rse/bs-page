@@ -218,15 +218,6 @@ form {
 	padding: 20px;
 }
 
-.bs-page-header__title {
-	font-size: 32px;
-	font-weight: 800;
-	line-height: 42px;
-}
-.bs-page-header__desc {
-	font-size: 16px;
-	line-height: 16px;
-}
 .button {
 	width: 220px;
 	height: 48px;
@@ -263,11 +254,36 @@ form {
 	}
 }
 
+.bs-header {
+	display: flex;
+	align-items: center;
+
+	& .bs-page-header__title {
+		font-size: 32px;
+		font-weight: 800;
+		line-height: 42px;
+	}
+	& .bs-page-header__desc {
+		font-size: 16px;
+		line-height: 16px;
+		margin-top: 16px;
+	}
+
+	& .bs-page-buttons {
+		margin-top: 42px;
+	}
+
+}
+
 .inner {
 	position: relative;
 	max-width: 780px;
 	padding: 32px 0;
 	margin: 0 auto;
+}
+
+header.inner {
+	padding: 80px 0;
 }
 
 a {
