@@ -36,14 +36,18 @@ h1, h2, h3, h4, h5, h6 {
     width: 220px;
     height: 48px;
     line-height: 48px;
+    text-align: center;
     display: inline-block;
+    border-radius: 25px;
 
     &.btn-fill {
         background-color: #65318f;
         color: #fff;
     }
     &.btn-border {
+        color: #65318f;
         border: 2px solid #65318f;
+        margin-left: 20px;
     }
 }
 
