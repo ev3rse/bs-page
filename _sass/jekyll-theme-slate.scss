@@ -221,7 +221,7 @@ form {
 .button {
 	width: 220px;
 	height: 48px;
-	line-height: 48px;
+	line-height: 46px;
 	text-align: center;
 	display: inline-block;
 	cursor: pointer;
@@ -364,6 +364,10 @@ Small Device Styles
 }
 
 @media screen and (max-width: 550px) {
+	.bs-header .bs-page-header__title {
+		font-size: 28px;
+	}
+	
 	.button {
 		display: block;
 		margin: 0 auto;
@@ -394,6 +398,10 @@ Small Device Styles
 
 		& .bs-footer__right-col {
 			margin-top: 8px;
+		}
+		
+		& p {
+			margin: 0;
 		}
 	}
 }

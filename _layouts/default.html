@@ -12,7 +12,6 @@
 
   <body>
 
-    <!-- HEADER -->
     <div id="header_wrap" class="bs-page-header outer">
         <header class="bs-header inner">
           <div class="bs-header-left-col">
@@ -43,14 +42,12 @@
         </header>
     </div>
 
-    <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="bs-main-content inner">
         {{ content }}
       </section>
     </div>
 
-    <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="bs-footer inner">
         <div class="bs-footer__left-col">
@@ -63,5 +60,16 @@
         </div>
       </footer>
     </div>
+
+    {% if site.google_analytics %}
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', '{{ site.google_analytics }}', 'auto');
+        ga('send', 'pageview');
+      </script>
+    {% endif %}
   </body>
 </html>
