@@ -299,6 +299,10 @@ header.inner {
 	& .bs-footer__left-col {
 		width: 50%;
 		text-align: left;
+
+		& span {
+			vertical-align: middle;
+		}
 	}
 
 	& .bs-footer__right-col {
@@ -307,6 +311,7 @@ header.inner {
 	}
 
 	& p {
+		color: #797979;
 		margin: 12px 0 32px 0;
 	}
 }
