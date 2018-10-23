@@ -132,9 +132,9 @@ p img {
 }
 
 pre, code {
-	color: #222;
-	background-color: #fff;
-	font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+	color: #797979;
+	background-color: #e1e1e1;
+	font-family: Monaco, "Consolas", "Lucida Console", monospace;
 	font-size: 14px;
 	border-radius: 2px;
 	-moz-border-radius: 2px;
@@ -143,14 +143,14 @@ pre, code {
 
 pre {
 	padding: 10px;
-	box-shadow: 0 0 10px rgba(0,0,0,.1);
+	box-shadow: 0 0 10px rgba(206, 206, 206, 0.2);
 	overflow: auto;
 }
   
 code {
 	padding: 3px;
 	margin: 0 3px;
-	box-shadow: 0 0 10px rgba(0,0,0,.1);
+	box-shadow: 0 0 10px rgba(206, 206, 206, 0.2);
 }
   
 pre code {
@@ -163,6 +163,10 @@ blockquote {
 	margin-bottom: 20px;
 	padding: 0 0 0 20px;
 	border-left: 3px solid #bbb;
+}
+
+.highlighter-rouge {
+	margin-bottom: 15px;
 }
 
 ul, ol, dl {
@@ -196,7 +200,7 @@ dl p {
 }
 
 table {
-	border: 1px solid #373737;
+	border: 1px solid #424044;
 	margin-bottom: 20px;
 	text-align: left;
 }
@@ -302,6 +306,7 @@ header.inner {
 	line-height: 26px;
 	display: flex;
 	align-items: center;
+	border-top: 2px solid #E1E1E1;
 
 	& .bs-footer__left-col {
 		width: 50%;
@@ -391,7 +396,8 @@ Small Device Styles
 
 	.bs-footer {
 		display: block;
-		margin: 12px 0 32px 0;
+		padding-top: 12px;
+		margin: 0 0 32px 0;
 
 		& .bs-footer__left-col,
 		& .bs-footer__right-col {
