@@ -222,6 +222,12 @@ form {
 	padding: 20px;
 }
 
+hr {
+	border: 0;
+	height: 1px;
+	background-color: #cecccc;
+}
+
 .button {
 	width: 220px;
 	height: 48px;
@@ -366,7 +372,7 @@ Small Device Styles
 	}
 
 	.bs-header-left-col {
-		padding-left: 0;
+		padding-right: 0;
 	}
 }
 
