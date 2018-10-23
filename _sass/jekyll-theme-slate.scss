@@ -259,6 +259,10 @@ form {
 	display: flex;
 	align-items: center;
 
+	& .bs-header-left-col {
+		padding-left: 42px;
+	}
+
 	& .bs-page-header__title {
 		font-size: 32px;
 		font-weight: 800;
@@ -301,6 +305,8 @@ header.inner {
 		text-align: left;
 
 		& span {
+			font-size: 18px;
+			line-height: 1;
 			vertical-align: middle;
 		}
 	}
@@ -341,6 +347,51 @@ Small Device Styles
 	.inner, header.inner {
 		padding-left: 16px;
 		padding-right: 16px;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	.bs-header-right-col {
+		display: none;
+	}
+
+	.bs-header-left-col {
+		padding-left: 0;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.button {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.button.btn-border {
+		margin-top: 20px;
+	}
+
+	header.inner {
+		padding-top: 30px;
+		padding-bottom: 50px;
+	}
+
+	.bs-main-content.inner {
+		padding-bottom: 48px;
+	}
+
+	.bs-footer {
+		display: block;
+		margin: 12px 0 32px 0;
+
+		& .bs-footer__left-col,
+		& .bs-footer__right-col {
+			width: 100%;
+			text-align: left;
+		}
+
+		& .bs-footer__right-col {
+			margin-top: 8px;
+		}
 	}
 }
 
